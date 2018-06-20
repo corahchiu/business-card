@@ -67,7 +67,7 @@ html, body {
 	-webkit-transform-origin: 100% 213.5px;
 }
 
-.vertical.flip-container:hover .flipper {
+/* .vertical.flip-container:hover .flipper {
 	transform: rotateX(-180deg);
 	-webkit-transform: rotateX(-180deg);
 }
@@ -76,7 +76,7 @@ label:hover .flipper {
     transform: rotateX(10deg);
     -webkit-transform: rotateX(10deg);
     box-shadow: 0 20px 20px rgba(255,255,255,.2);
-}
+} */
    
 input {
     display: none;
