@@ -10,18 +10,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.flip-container, .front, .back {
-	width: 100%;
-	height: 100%;
 }
 
 .flipper {
-    width: 85%;
-    height: 85%;
-    background: #fccc36;
+    width: 90%;
+    height: 90%;
+    font-size: 1.3em;
+    background: white;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transition: all 600ms;
@@ -29,55 +24,42 @@ html, body {
     z-index: 20;
     cursor: pointer;
 	transition: 0.6s;
-	position: relative;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .front, .back {
-	top: 0; bottom: 0; left: 0; right: 0;
-	color: white;
-	font-size: 3em;
+    top: 0; bottom: 0; left: 0; right: 0;
+	color: black;
 	text-align: center;
 	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
 }
 
 .front {
-	z-index: 2;
-    transform: rotateY(0deg);
-    -webkit-transform: rotateX(0deg);
+    z-index: 2;
+    background: #fdd236;
 }
 
 .back {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateX(180deg);
+    background: white;
 }
 
 .vertical.flip-container {
 	position: relative;
 }
 
-.back {
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-}
 .vertical.flip-container .flipper {
 	transform-origin: 100% 213.5px;
 	-webkit-transform-origin: 100% 213.5px;
 }
 
-/* .vertical.flip-container:hover .flipper {
-	transform: rotateX(-180deg);
-	-webkit-transform: rotateX(-180deg);
-}
-    
-label:hover .flipper {
-    transform: rotateX(10deg);
-    -webkit-transform: rotateX(10deg);
-    box-shadow: 0 20px 20px rgba(255,255,255,.2);
-} */
-   
 input {
     display: none;
 }
@@ -86,9 +68,30 @@ input {
     transform: rotateX(180deg);
     -webkit-transform: rotateX(180deg);
 }
-    
-/* label:hover :checked + .flipper {
-    transform: rotateX(160deg);
-    -webkit-transform: rotateX(160deg);
-    box-shadow: 0 20px 20px rgba(255,255,255,.2);
-} */
+
+:checked + front img{
+    backface-visibility: hidden;
+}
+
+:not(:checked) + back {
+    backface-visibility: hidden;
+}
+
+#imsure-yellow {
+    transform: rotateZ(-90deg);
+    -webkit-transform: rotateZ(-90deg);
+    max-height: 90vw;
+    max-width: 90vh;
+}
+
+#imsure-white {
+    transform: rotateX(180deg) rotateZ(-90deg);
+    -webkit-transform: rotateX(180deg) rotateZ(-90deg);
+    max-height: 90vw;
+    max-width: 90vh;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+}
