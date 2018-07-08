@@ -40,6 +40,7 @@ html, body {
     justify-content: center;
     position: absolute;
     margin: auto;
+    padding: 10px;
 }
 
 .front {
@@ -82,13 +83,14 @@ input {
     -webkit-transform: rotateZ(-90deg);
     max-height: 90vw;
     max-width: 90vh;
+    padding: 10px;
 }
 
 #imsure-white {
     transform: rotateX(180deg) rotateZ(-90deg);
     -webkit-transform: rotateX(180deg) rotateZ(-90deg);
     max-height: 90vw;
-    max-width: 90vh;
+    max-width: 80vh;
 }
 
 a {
