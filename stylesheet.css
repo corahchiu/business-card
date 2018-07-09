@@ -1,5 +1,6 @@
 html, body {
     background-color: black;
+    /* font-family: Arial, Gadget, sans-serif !important; */
 }
 
 .flip-container {
@@ -16,7 +17,7 @@ html, body {
 .flipper {
     width: 90%;
     height: 90%;
-    font-size: 1.3em;
+    font-size: 1em;
     background: white;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -93,4 +94,5 @@ input {
 a {
     text-decoration:none;
     color: black;
+    font-size: 1em;
 }
